@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 18, 2018 1:05:02 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Salary" table="salary" catalog="bankdb" optimistic-lock="version">
+        <id name="sid" type="java.lang.Integer">
+            <column name="sid" />
+            <generator class="identity" />
+        </id>
+        <property name="id" type="java.lang.Integer">
+            <column name="id" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="45" />
+        </property>
+        <property name="salary" type="java.lang.Double">
+            <column name="salary" precision="22" scale="0" />
+        </property>
+        <property name="rent" type="java.lang.Double">
+            <column name="rent" precision="22" scale="0" />
+        </property>
+        <property name="tallowance" type="java.lang.Double">
+            <column name="tAllowance" precision="22" scale="0" />
+        </property>
+        <property name="ta" type="java.lang.Double">
+            <column name="ta" precision="22" scale="0" />
+        </property>
+        <property name="tsalary" type="java.lang.Double">
+            <column name="tsalary" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
